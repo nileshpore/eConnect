@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>User Login</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <label>Username:</label>
+        </dt>
+
+        <dd>
+            <input type="text" id="txtUsername" />
+        </dd>
+
+        <dt style="margin-top:10px">
+            <label>Password:</label>
+        </dt>
+
+        <dd style="margin-top:10px">
+            <input type="password" id="txtPassword" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <button id="btnLogin" type="button" onclick="loginUser()">Login</button>
+</p>
+
+<script type="text/javascript">
+
+    function loginUser() {
+        var username = $("#txtUsername").val();
+        var password = $("#txtPassword").val();
+        var url = "/Login/Validate";
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: { username: username, password: password },
+            async: false,
+            success: function (data) {
+                alert(data);
+                if (data == true)
+                    window.location.href = "/home";
+            }
+        });
+    }
+</script>
