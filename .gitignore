@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/eConnect/.vs/eConnect
+/eConnect/eConnect/bin
+/eConnect/eConnect/obj/Debug
+*.user
+/eConnect/packages
