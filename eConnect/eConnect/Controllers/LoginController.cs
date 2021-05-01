@@ -5,6 +5,7 @@ using System.Web.Security;
 
 namespace eConnect.Controllers
 {
+    //Login controller
     public class LoginController : Controller
     {
         private readonly IUserRepository userRepository;
