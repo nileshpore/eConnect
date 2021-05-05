@@ -141,6 +141,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ManagerController.cs" />
     <Compile Include="DataAccess\Contract\IUserRepository.cs" />
     <Compile Include="DataAccess\DataContext.Context.cs">
       <AutoGen>True</AutoGen>
@@ -225,6 +226,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Manager\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
